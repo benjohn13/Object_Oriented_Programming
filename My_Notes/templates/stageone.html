@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}IPND Stage 1 Notes{% endblock %}
+{% block content %}
+	<h1>Stage One</h1>
+<div>
+  <a href="#stage-1-1"><strong>The Basics of the Web</strong></a>
+  <ul>
+    <li><a href="#stage-1-1-1">The World Wide Web</a>
+      <li><a href="#stage-1-1-2">HTML Documents</a></li>
+  </ul>
+</div>
+<div>
+  <a href="#stage-1-2"><strong>Working with HTML and CSS</strong></a>
+  <ul>
+    <li><a href="#stage-1-2-1">Creating a Structured Document</a></li>
+    <li><a href="#stage-1-2-2">The Box</a></li>
+    <li><a href="#stage-1-2-3">The Computer</a></li>
+  </ul>
+</div>
+<div>
+</div>
+<div class="stage">
+  <div class="lesson" id="stage-1-1">
+    <h2>The Basics of the Web</h2>
+    <div class="concept" id="stage-1-1-1">
+      <div class="concept-title">The World Wide Web</div>
+      <div class="concept-content">
+        <p>The WWW is a collection of html documents. HTML is the basis for most every web page. Hyperlinks link the web together. Major Pieces of the web: You, Your computer and browser, The Internet, Servers, HTTP. HTTP (Hyper text transfer protocol) moves
+          HTML files from servers to your browser.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="stage-1-1-2">
+      <div class="concept-title">HTML Documents</div>
+      <div class="concept-content">
+        <p>
+          HTML documents are generally structured like this:
+        </p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Catchy Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	Here is some content!
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+    </div>
+    <div class="lesson" id="stage-1-2">
+      <h2>Working with HTML and CSS</h2>
+      <div class="concept" id="stage-1-2-1">
+        <div class="concept-title">Creating a Structured Document</div>
+        <div class="concept-title"></div>
+        <div class="concept-content">
+          Congradulations, cadet. You've made it to CSS; much better place than Eden Prime. By now you should have learned that styling can be just as important as knowing the actual syntax. It's crucial that you learn to be consistent and organized when writing
+          this code. Some of the concepts you should take note of are,
+          <ul>
+            <li>Avoid repetition: You can avoid having to repeat yourself in code and lower your risk at making mistakes by using language like CSS to control multiple tags and elements in HTML. This will make you more efficient, more acurate and make it
+              easier for you to maintain your code over time.</li>
+            <li>Watch your indentation: keep everything clean and organized when writing script. Makes your life a lot easier down the road. When you read an HTML document as <em>text</em>, you see a wave of changing indentations going up and down the left
+              side of the document. The more indented an element is, the more deeply nested its corresponding "box" is.</li>
+            <li>Be consistent: mind your letters and use of tags. For example, if you use lower case letters to define values or attributes in one area of your code, then make <em>all</em> your values and attribute lower case.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="concept" id="stage-1-2-2">
+        <div class="concept-title">Boxes</div>
+        <div class="concept-content">
+          <p>
+            By now you've also seen a box model. It's made up of content, padding, border and margin. By learning to manipulate the properties of this model, you'll be able to have a great impact on the user experience.
+          </p>
+          <p>
+            Everything on a web page is a <em>box</em>. This makes things easy to rearrange. To boxify a design, cut up the boxes physically or conceptually, and find ways to arrange them in a way that looks cool and user friendly.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="stage-1-2-3">
+        <div class="concept-title">The Computer</div>
+        <div class="concept-content">
+          <p>
+            Alright cadet, time to focus now. I want to spend some time going over this concept. Most machines (like laser cannon) are designed to do a few things. Unless you alter these machines, they will only be able to do those things. Computers are different.
+            A computer can be programmed to do anything we want, as long as we can write a program that specifies a <em>specific sequence</em> of instructions.
+          </p>
+          <p>
+            Remember the Trade Federation? That's right, almost no one does. They had a way to mass produce armies and program thousands of droids. But their flaw was that you could take out one of their Droid Control Ships, and their army would become a junk pile!
+            Any way, let's get serious now...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

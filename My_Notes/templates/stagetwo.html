@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}IPND Stage 2 Notes{% endblock %}
+{% block content %}
+	<h1>Stage Two</h1>
+<div>
+  <a href="#stage-2-1"><strong>Serious Programming</strong></a>
+  <ul>
+    <li><a href="#stage-2-1-1">Computer Programs</a></li>
+    <li><a href="#stage-2-1-2">Programming Language</a></li>
+    <li><a href="#stage-2-1-3">Python</a></li>
+    <li><a href="#stage-2-1-4">Grammar</a></li>
+    <li><a href="#stage-2-1-5">Python Expressions</a></li>
+    <li><a href="#stage-2-1-6">Variables and Strings</a></li>
+    <li><a href="#stage-2-1-7">What are some ways variables are useful?</a></li>
+    <li><a href="#stage-2-1-8">What is a function?</a></li>
+    <li><a href="#stage-2-1-9">What is the difference between making and using a function?</a></li>
+  </ul>
+</div>
+<div class="lesson" id="stage-2-1">
+  <h2>Serious Programming</h2>
+  <div class="concept" id="stage-2-1-1">
+    <div class="concept-title">Computer Programs</div>
+    <div class="concept-content">
+      <p>
+        A program is a precise sequence of steps that a computer can follow to do something useful. Web browsers, games, mobile apps, and simple print statements are all examples of computer programs. If you really work hard at it, cadet, you'll find yourself
+        telling computers what to do in no time.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept" id="stage-2-1-2">
+    <div class="concept-title">Programming Language</div>
+    <div class="concept-content">
+      <p>
+        A programming language is what programmers use to tell a computer what to do. Python is one example of a programming language.
+      </p>
+      <p>
+        This section in coding was a bit difficult for me to retain, but it just takes hard work and practice. So if you're feeling hung up, and enjoy reading, I highly recommend this <a href="http://www.amazon.com/Python-Beginners-Hands-Project-Hands-On-ebook/dp/B00R9JPDN4">book</a>!
+      </p>
+    </div>
+  </div>
+  <div class="concept" id="stage-2-1-3">
+    <div class="concept-title">Python</div>
+    <div class="concept-content">
+      <p>
+        Python is a programming language. When you write Python code and press "Run", a <em>Python Interpreter</em> converts the code you wrote as a set of instructions that the computer itself can understand and execute.
+      </p>
+      <p>
+        Think of a Python program, a Python interpreter, and a web browser as different versions of the same thing (a computer program). This kind of <em>abstract thinking</em> will help you <em>empathize</em> with the technology you’ll be working with.
+      </p>
+    </div>
+  </div>
+  <div class="concept" id="stage-2-1-4">
+    <div class="concept-title">Grammar</div>
+    <div class="concept-content">
+      <p>
+        Just like human languages have grammars, programming languages do too. A grammar is a specification of what is "correct" and what is "incorrect."
+      </p>
+      <p>
+        In languages like English, people can ofent make sense of sentences that aren't technically "correct," but computers aren't smart enough to do this. This means we have to write code that is exactly "correct" according to the Python interpreter, otherwise
+        our code won't run.
+      </p>
+    </div>
+  </div>
+  <div class="concept" id="stage-2-1-5">
+    <div class="concept-title">Python Expressions</div>
+    <div class="concept-content">
+      <p>
+        A Python "expression" is a legal Python statement. For example: <b>print 1 + 1</b> is a valid expression, but <b>print 1 +</b> (without a number at the end) is not.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept" id="stage-2-1-6">
+    <div class="concept-title">Variables and Strings</div>
+    <div class="concept-content">
+      <ul>
+        <li><b>Variables</b> - variables give programmers a way to give <em>names</em> to <em>values</em>. For example, if my variable has a value of 2, then the following code would print out 4 if I wrote, <em>print my_variable + my_variable</em>.</li>
+        <li><b>Assign a Value</b> - We can assign a value to a variable by writing code like this, <em>my_variable = 2</em>. We can even change the value of a variable by re-assigning it to a different value later.</li>
+        <li><b>Strings</b> - A string in Python is a sequence of immutable characters. Meaning, that once defined, they cannot be changed (unless you redefine them). Strings can be created with single quotes, double quotes or triple quotes. When we use triple
+          quotes, strings can span several lines without using the escape character.</li>
+        <li><b>Equals Sign</b> - the equals symbol simply means "takes the value of". For example, in the line <em>2 + 3 = 5</em>, the equals sign means "is the same as". But in line <em>my_variable = 5</em>, the equals sign means "takes the value of".</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

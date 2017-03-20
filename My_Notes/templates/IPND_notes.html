@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Notes{% endblock %}
+
+{% block content %}
+	<h1>Introduction to Programming</h1>
+		<div>
+			<h2>Stage Zero</h2>
+				<div>
+					<a href="/stage0"><strong>Stage Zero</strong></a>
+					<ul>
+						<li><a href="/stage0#stage-0-1">The Darkest Day</a></li> 
+					</ul>	
+				</div>
+
+			<h2>Stage One</h2>
+				<div>
+					<a href="/stage1"><strong>Stage One</strong></a>
+						<ul>
+							<li><a href="/stage1#stage-1-1">The Basics of the Web</a></li>
+							<li><a href="/stage1#stage-1-2">Working with HTML and CSS</a></li>
+						</ul>
+				</div>
+
+			<h2>Stage Two</h2>
+				<div>
+					<a href="/stage2"><strong>Stage Two</strong></a>
+						<ul>
+							<li><a href="/stage2#stage-2-1">Serious Programming</a></li>
+						</ul>
+				</div>
+
+			<h2>Stage Three</h2>
+				<div>
+					<a href="/stage3"><strong>Stage Three</strong></a>
+						<ul>
+							<li><a href="/stage3#stage-3-1">Build a Movie Website</a></li>
+						</ul>
+				</div>
+
+			<h2>Stage Four</h2>
+				<div>
+					<a href="/stage4"><strong>Stage Four</strong></a>
+						<ul>
+							<li><a href="/stage4#stage-4-1">Allowing Comments</a></li>
+						</ul>
+				</div>
+		</div>
+	</div>
+	<div class="stage">
+	<div class="lesson">
+		<h2>About This Nanodegree</h2>
+		<div class="concept" id="1">
+			<div class="concept-content">
+			   <p>
+				"If you have zero programming knowledge, completing this Nanodegree will give you the basic understanding and skills you need to get started in the world of programming. 
+				This Nanodegree equips you with the foundational knowledge and skills that all programmers use whether they program mobile apps, create web pages, or analyze data. You 
+				won’t just learn to code, you will learn what it means to “think like a programmer” and you'll have your own web page and a portfolio of programs you've built to prove it. 
+				Successful completion of this program will enhance your skills, broaden your opportunities, and lay the groundwork for a future in technology. It is not a career-track 
+				degree, but for beginners, it is a critical step forward." ~Udacity
+			   </p>
+			   <p>
+			   	This is a compilation of notes I jotted down for this class. While they do not cover all the topics covered in this degree, it shows some examples of the things you
+			   	can learn here! If you haven't tried a Nanodegree yet, I highly recommend it :)
+			   </p>
+		    </div>
+		<div class="concept" id=2>
+			<div class="concept-title">Comments</div>
+			<div class="concept-content">
+			<form action="/entry" method="post">
+				<div><textarea id="styled1" name="content"></textarea></div>
+				<div><input type="submit" value="comment"></div>
+			</form>
+			<div class="error">{{ error }}</div>
+			<hr>
+			<a href="{{ url|safe }}">{{ url_linktext }}</a>
+			<hr>
+			{% for comment in comments %}
+				{% if comment.author %}
+					<b>{{ comment.author.email }}</b> wrote:
+				{% else %}
+				<b>Somebody</b> wrote:
+				{% endif %}
+				<blockquote>{{ comment.content }}</blockquote>
+			{% endfor %}</div>
+		</div>
+	</div>
+{% endblock %}

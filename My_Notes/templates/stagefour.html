@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block title %}
+IPND Stage 4 Notes
+{% endblock %}
+{% block content %}
+<h1>Stage Four</h1>
+<div>
+  <a href="#stage-3-1"><strong>Allowing Comments</strong></a>
+  <ul>
+    <li><a href="#stage-4-1-1">Creating a Webpage</a></li>
+    <li><a href="#stage-4-1-2">Forms</a></li>
+    <li><a href="#stage-4-1-3">HTML Templates</a></li>
+    <li><a href="#stage-4-1-4">Servers</a></li>
+    <li><a href="#stage-4-1-5">Validation</a></li>
+  </ul>
+</div>
+<div class="lesson" id="stage-4-1">
+  <h2>Allowing Comments</h2>
+  <div class="concept" id="stage-4-1-1">
+    <div class="concept-title">Creating a Webpage</div>
+    <div class="concept-content">
+      <p>
+        So far in this Nanodegree, we have only been able to host projects locally on our own computers. Now, in stage four, we are going to learn how 
+        use Google App Engine to host a site for our project, and make it so that we can share a link with our friends and family, and comments on our 
+        site. Now there is a lot that goes on with Google App Engine. So before you start trying to build your personal webstie, I recommend walking 
+        through the tutorial steps of building a page first. This gives you practice with a tool that we will be using from here on out, and it covers 
+        a lot of the basics. To get started with Python on GAE, click <a href=https://cloud.google.com/appengine/docs/python/gettingstartedpython27/introduction>here</a> 
+        and follow the steps :)
+      </p>
+    </div>
+  </div>
+  <div class="concept" id="stage-4-1-2">
+    <div class="concept-title">Forms</div>
+    <div class="concept-content">
+      Forms are a way to make web pages interactive using HTML. Like forms on paper, a form on a web page allows the user to enter requested information 
+      and submit it for processing. For example, you could write some code that looks like this,
+      <p>
+        <code>
+        &lt;form&gt; <br>
+            &lt;input type="checkbox" name="q"&gt;<br>
+            &lt;input type="checkbox" name="r"&gt;<br>
+            &lt;input type="checkbox" name="s"&gt;<br>
+            &lt;input type="Submit"&gt;<br>
+        &lt;/form&gt;<br>
+      </code>
+      </p>
+      Which can translates to this,
+      <p>
+        <form>
+          <input type="checkbox" name="q">
+          <input type="checkbox" name="r">
+          <input type="checkbox" name="s">
+          <input type="Submit">
+        </form>
+      </p>
+      Here is a form on this page, that I wrote from class, and it allows you to search anything you type in the box through Google!
+      <p>
+        <form action="http://www.google.com/search">
+          <input name=q>
+          <input type="Submit">
+        </form>
+      </p>
+    </div>
+  </div>
+  <div class="concept" id="stage-4-1-3">
+    <div class="concept-title">HTML Templates</div>
+    <div class="concept-content">
+      <p>
+        HTML templates are pre-built files composed of HTML pages that include integrated images, text content and support files for font styles or other things. 
+        For example, you clicked on a link that brought you to this page. <em>This</em> page is one of those HTML files, and the other pages you click on within 
+        this site are other HTML templates! Templates allow programmers to avoid repetition, and avoiding repetition is very important when you are working on 
+        multiple layers of code. Remember how in the beginning of the class, we talked about the five ways of thinking? One of those ways is <em>Systems Thinking</em>, 
+        which simply means take a big problem, and break it down into a smaller problem. HTML templates is a great way to take a big website, and break it down 
+        into smaller pieces for future work and changes. This is also another example of why you want to leave good descriptions in your code, so you can identify 
+        what you are working on easily.
+      </p>
+      <p>
+        Template Inheritance - template inheritance allows you to build a base “skeleton” template that contains all the common elements of your site and defines 
+        blocks that child templates can override. While this idea may seem complicated, it's very basic! Here's an example from 
+        <a href ="http://flask.pocoo.org/docs/0.10/patterns/templateinheritance/">Jinja</a>. This template defines a simple HTML skeleton document that you might 
+        use for a simple two-column page. It’s the job of “child” templates to fill the empty blocks with content. Template inheritance is a way software developers
+        keep things organized and avoid repetition. This also prevents from having to write thousands of lines of code, which can lead to preventing bugs.
+      </p>
+    </div>
+  </div>
+  <div class="concept" id="stage-4-1-4">
+    <div class="concept-title">Servers</div>
+    <div class="concept-content">
+      <p>
+  		 The basic function of a server is to listen in on a port for incoming network requests, and a good demonstration of this is the interaction between a web server 
+  		 and browser. Although to a user the process is instantaneous, or nearly so, when he clicks a link while surfing the Web, several things are taking place behind 
+  		 the scenes: the request for the web page is transmitted to the corresponding web server, the server fetches and assembles the Web page and retransmits it using 
+  		 a protocol like HTTP. Finally, the user's browser receives the data, converts it, and displays the page to him.
+  	  </p>
+      <p>
+        What is <em>HTTP</em>? The <em>Hypertext Transfer Protocol</em> is designed to enable communications between clients and servers. HTTP works as a request-response 
+        protocol between a client and server. A web browser may be the client, and an application on a computer that hosts a web site may be the server. Two commonly used 
+        methods for a <em>request-response</em> between a client and server are: <b>GET</b> and <b>POST</b>. Here are some ways these two methods differ,
+        <ul>
+          <li><b>GET</b> - Requests data from a specified resource.</li>
+            <ul>
+              <li>They can be cached</li>
+              <li>They remain in the browser history</li>
+              <li>They can be bookmarked</li>
+              <li>They should never be used when dealing with sensitive data</li>
+              <li>They have length restrictions</li>
+              <li>They should be used only to retrieve data</li>
+            </ul>
+          <li><b>POST</b> - Submits data to be processed to a specified resource.</li>
+            <ul>
+              <li>They are never cached</li>
+              <li>Do not remain in the browser history</li>
+              <li>Cannot be bookmarked</li>
+              <li>Have no restrictions on data length</li>
+            </ul>
+        </ul>
+      </p>
+      <p>
+       If you would like to learn more about these two request methods, visit <a href="http://www.w3schools.com/tags/ref_httpmethods.asp">w3schools'</a> website!
+	   </p>
+    </div>
+  </div>
+  <div class="concept" id="stage-4-1-5">
+    <div class="concept-title">Validation</div>
+    <div class="concept-content">
+      <p>
+        Validation basically means verifying on the server side that what we received is what we expected to see. An example of why we would want to do this is to protect 
+        our site from bad people that want to do bad things to it. So let's say we have a form on this site that allows people to leave comments on it. That's great for 
+        people who want to share their thoughts on the page. But some one could come along, and submit a bunch of junk code in the comment box and really fill up our database 
+        with garbage. Validation allows us to program a computer to handle junk, or come up with smart ways of dealing with junk.
+      </p>
+        Another thing we could do wth validation, is guide the user to a friendly experience. For example, we could create a form that requires the user to input a phone number
+        for their profile. If the user does not provide a phone number that meets the required format, we could make sure they see an error message that guides them to put it 
+        in correctly!
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

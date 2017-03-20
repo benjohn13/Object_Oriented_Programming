@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block title %}IPND Stage 1 Notes{% endblock %}
+{% block content %}
+<h1>Stage Zero</h1>
+  <div>
+    <a href="#stage-0-1"><strong>The Darkest Day</strong></a>
+    <ul>
+      <li><a href="#stage-0-1-1">How The Web Works</a>
+        <li><a href="#stage-0-1-2">Five Ways of Thinking</a></li>
+        <li><a href="#stage-0-1-3">Terms and Definitions</a></li>
+        <li><a href="#stage-0-1-4">Your Equipment</a></li>
+    </ul>
+  </div>
+  <div class="stage">
+    <div class="lesson" id="stage-0-1">
+      <h2>The Basics</h2>
+      <div class="concept" id="stage-0-1-1">
+        <div class="concept-title">How The Web Works</div>
+        <div class="concept-content">
+          <p>
+            Dark sky. Cold rain. Muddy ground. Dangerous wildlife. Exhaustion and despair. These are <em>not</em> the elements I would encounter my first day in coding. No, the mission. The unknown... not knowing what I don't know. This was the inner
+            struggle I faced that horrible day. When I wrote my first &lt;b&gt; tag, I was anything but bold. But I pressed on... pressing more keys, watching more videos... the horror... the audacity of Udacity.
+          </p>
+          <p>
+            Who do they think they are?! But it's not they're fault. It's those... <em>machines</em>. Well, if you're reading this, perhaps you can use these notes to help you find your way... a better way. The web is just a bunch of computers that communicate
+            with each other. When you go to a web page like www.google.com, their computer sends a <em>HTTP Request</em> to a server. The server finds the appropriate HTML document and sends it back to the user's computer where a web browser interprets
+            the page and displays it on the user's screen. It's your mission to learn how to speak their language, learn their ways, then infiltrate the system by commanding them! Up for the challenge?
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="stage-0-1-2">
+        <div class="concept-title">Five Ways of Thinking</div>
+        <div class="concept-content">
+          If you intend to tackle programming, you must first remember the great words of Master Yoda, "Do. Or do not. There is no try."... and these 5 ways of thinking:
+          <!-- Don't worry about the order, but defitnely dedicate them to memory. This would be a good time to try a "ul" tag. If you want to beat the comps, you gotta think like one. -->
+          <ul>
+            <li><b>Procedural Thinking</b>- Procedural thinking involves creating perfectly clear and unambiguous instructions for a computer to follow.</li>
+            <li><b>Abstract Thinking</b>- Abstract thinking means finding similarity, or as programmers would say, generality amongst seemingly different things.</li>
+            <li><b>Systems Thinking</b>- Systems thinking happens when you break a big problem down into smaller pieces.</li>
+            <li><b>Technological Empathy</b>- "Technological empathy" comes in many forms. For example, computer empathy is the ability to understand what a computer is, how it works, and what it's good and bad at doing.</li>
+            <li><b>Debugging</b> (my favorite concept so far) - When a program doesn't work, it's because there is a mistake (also known as a "bug") somewhere in the computer code. Since these mistakes are an unavoidable part of programming, every good programmer
+              has a system for fixing them and that system usually looks something like this:
+              <ul>
+                <li>Collect evidence (what makes this program fail?)</li>
+                <li>Generate theories (what may have caused this problem?)</li>
+                <li>Test those theories (if my theory is correct, how could I find out?)</li>
+                <li>Fix the problem</li>
+              </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="concept" id="stage-0-1-3">
+        <div class="concept-title">Terms and Definitions</div>
+        <div class="concept-content">
+          <p>
+            Alright, by now you should have submitted "Project Zero" and gotten some feedback from HQ. They will be your point of contact during this mission. If you hold on to those first five basic ways of thinking, and dig deep inside yourself, you'll soon be
+            at the other end of this and we'll all make it home safe. Here, take these definitions with you. The road is long and dangerous.
+          </p>
+          <p>
+            <b>HTML</b> (<em>Hypertext Markup Language</em>) - Think of this as the structure of your web page. If the web page was the Death Star, then HTML is the titanium alloy structures that make up all the levels, walls, floor, etc. HTML consists
+            of tags upon tags that add up to make elements, just like titanium alloy in made of multiple metals.
+          </p>
+          <p>
+            <b>CSS</b> (<em>Cascading Style Sheets</em>) - Think of this as the "style" of your Death Star. What shade of grey is the floor? What shade of grey are the walls? Is Emperor Palpatine's chair Corinthian or Noobian grey? The options for style
+            are limitless.
+          </p>
+          <p>
+            <b>JavaScript</b> - While you haven't touched much on this yet, you can think of this as the "interactive functions" of your Death Star... Like, you can push this button here, issue a voice command and a legion of men will follow your order....
+            You may fire at will, commander.
+          </p>
+          <p>
+            <b>DOM</b> (<em>Document Object Model</em>) - This term refers to your HTML structure. It will be comprised of multiple tags added together, making up multiple elements that form a "tree-like" structure in your coding. Think of it like multiple
+            atoms coming together to make up a molecule, then molecules coming together to make up an element! In a browser, this structure shows up as a series of nested boxes. There are boxes inside of boxes inside of boxes, and so on...
+            <!-- Remember, computers are stupid. Don't let on that you know this, but they take eveything literally! So learn to control your anger, and master the force... of telling them what to do. -->
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="stage-0-1-4">
+        <div class="concept-title">Your Equipment</div>
+        <div class="concept-content">
+          <p>
+            <b>Text Editors</b> - When writing code, programmers use special text editors (like Sublime Text for example). These editors make the programmer's life easier. For example, some text editors will automatically generate a closing HTML tag when
+            you write an opening tag.
+          </p>
+          <p>
+            <b>Developer Tools</b> - HTML elements are either inline or block. Block elements form an "invisible box" around the content inside of them.
+          </p>
+        </div>
+      </div>
+    </div>
+{% endblock %}
