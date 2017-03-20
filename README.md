@@ -11,18 +11,18 @@ ones are class-based. This means that objects are instances of classes, which
 also determines their type.
 
 In short, OOP encourages the re-use of good code, separation of code and code 
-legibility. Keep things simple by writing it once in such a way that it can be 
-used with varying data and avoid making mistakes with typos or reducing the amount 
-of work it takes to update/maintain your code. 
+legibility. Keep things simple by writing it once in such a way that it can be re- 
+used with varying data over and over again, while reducing the amount of time it 
+takes to update/maintain your code. 
 
-Rather than try to explain OOP further, I'd recommend taking this free course from 
-Udacity, "Programming Foundations with Python" taught by Kunal Chawla. I have taken 
-several courses in Python programming and had many mentors explain OOP. But I have 
-always returned to Kunal's course for reference because he does an excellent job 
-of explaining it from a basic perspective, while giving you a practical project
-to build that helps you understand it better. 
+I'd recommend taking this free course from Udacity, "Programming Foundations with 
+Python" taught by Kunal Chawla. I have taken several courses in Python programming 
+and had many mentors explain OOP. But Kunal's course does an excellent job of 
+explaining it from a basic perspective, while giving you a practical project to build 
+that helps you understand it better. 
 
 https://www.udacity.com/course/programming-foundations-with-python--ud036
 
-Here is my code from this project and I hope you have a chance to take the course
-as well. It was a lot of fun and is great to show off to your friend and family.
+I hope you have a chance to take the course; it was a lot of fun and is great project
+to build knowledge on. I also hope these examples of OOP help you understand it better
+and that you enjoy learning the power of OOP.
