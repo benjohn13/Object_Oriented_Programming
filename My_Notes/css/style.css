@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+  font-weight: normal;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #0174df;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.lesson {
+  background-color: #0174df;
+}
+
+.concept {
+  background-color: #f0faff;
+}
+
+.concept-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
