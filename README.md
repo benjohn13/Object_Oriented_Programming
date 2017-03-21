@@ -11,9 +11,9 @@ ones are class-based. This means that objects are instances of classes, which
 also determines their type.
 
 In short, OOP encourages the re-use of good code, separation of code and code 
-legibility. Keep things simple by writing it once in such a way that it can be re-
-used with varying data over and over again, while reducing the amount of time it 
-takes to update/maintain your code. 
+legibility. Keep things simple by writing it once in such a way that it can be re-used 
+with varying data over and over again, while reducing the amount of time it takes to 
+update/maintain your code. 
 
 I'd recommend taking this free course from Udacity, "Programming Foundations with 
 Python" taught by Kunal Chawla. I have taken several courses in Python programming 
