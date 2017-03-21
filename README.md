@@ -1,6 +1,6 @@
 Object Oriented Programming (OOP)
 
-Object-oriented programming (OOP) is a programming model based on the concept 
+Object-Oriented Programming (OOP) is a programming model based on the concept 
 of "objects". These objects may contain data in the form of fields, often known 
 as attributes. And code in the form of procedures often known as "methods". One
 of the features of objects is that its procedures can access and modify the data
@@ -11,7 +11,7 @@ ones are class-based. This means that objects are instances of classes, which
 also determines their type.
 
 In short, OOP encourages the re-use of good code, separation of code and code 
-legibility. Keep things simple by writing it once in such a way that it can be re- 
+legibility. Keep things simple by writing it once in such a way that it can be re-
 used with varying data over and over again, while reducing the amount of time it 
 takes to update/maintain your code. 
 
